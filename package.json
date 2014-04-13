@@ -1,0 +1,21 @@
+{
+  "name": "d3_sandbox",
+  "version": "0.0.0",
+  "description": "A little area to play around with different d3 visualizations",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "keywords": [
+    "data",
+    "visualization",
+    "d3",
+    "sandbox"
+  ],
+  "author": "Matt Merkes",
+  "license": "MIT"
+}

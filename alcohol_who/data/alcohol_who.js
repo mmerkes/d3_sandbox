@@ -5,6 +5,8 @@ fs.readFile('alcohol_who_source.json', function(error, data) {
     throw error;
   }
 
+// 8-12
+// theme, title, artist, year, spotify_url
   var newData = JSON.parse(data).data.reduce(function(previous, current) {
     if(current[8] && current[9]) {
       previous.push({

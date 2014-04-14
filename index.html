@@ -11,6 +11,12 @@
           width = 700 - margin,
           height = 400 - margin;
 
+      var parseDate = d3.time.format("%Y").parse;
+
+      data.forEach(function(song) {
+        song.year = parseDate(song.year);
+      });
+
       d3.select('body')
         .append('svg')
           .attr('width', width + margin)
@@ -24,7 +30,7 @@
         return d.year;
       });
 
-      var x_scale = d3.scale.linear()
+      var x_scale = d3.time.scale()
         .range([margin, width - margin])
         .domain(x_extent);
 
